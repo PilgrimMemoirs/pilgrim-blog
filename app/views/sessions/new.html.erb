@@ -1,0 +1,6 @@
+  <h1> Sign Up! </h1>
+  <%= form_for @sessions, url: { controller: "sessions", action: "create"} do |f| %>
+    <%= f.email_field :email, placeholder: "Email" %>
+    <%= f.password_field :password, placeholder: "Password" %>
+    <%= f.submit "Log In!" %>
+  <% end %>

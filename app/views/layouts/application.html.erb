@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pilgrim Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav>
+    <h2><a href="/" Pilgrim Blog </a></h2>
+    <!-- Look up Rails "Link_to" way of, y'know, linking -->
+    <ul>
+      <li><%= link_to "Log In", login_path %></li>
+      <li><%= link_to "Sign Up", signup_path %></li>
+
+      <li><a href="/">All Posts</a></li>
+      <li><a href="/">New Post</a></li>
+      <li><a href="/logout">Log Out</a></li>
+    </ul>
+
+  </nav>
+<div
+<%= yield %>
+
+</body>
+</html>
